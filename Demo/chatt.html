@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyxig Chatt Hemsida</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div id="lock-screen" class="card mx-auto shadow-lg" style="max-width: 400px;">
+        <div class="card-body">
+            <h2 class="card-title text-center">Ange lösenord</h2>
+            <input type="password" id="password" class="form-control mb-3" placeholder="Lösenord">
+            <button class="btn btn-primary btn-block" onclick="checkPassword()">Logga in</button>
+            <p id="error-message" class="text-danger text-center mt-2"></p>
+        </div>
+    </div>
+
+    <div id="chat-screen" class="card mx-auto shadow-lg" style="max-width: 600px; display:none;">
+        <div class="card-body">
+            <h2 class="card-title text-center">Välkommen till chatten!</h2>
+            <div id="chat-box" class="border rounded p-3 mb-3" style="height: 200px; overflow-y: scroll; background-color: #f8f9fa;"></div>
+            <input type="text" id="message-input" class="form-control mb-3" placeholder="Skriv ditt meddelande här...">
+            <button class="btn btn-primary btn-block" onclick="sendMessage()">Skicka</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="sophia.js"></script>
+</body>
+</html>

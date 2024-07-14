@@ -1,0 +1,32 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#chat-box p {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.username-sophia {
+    color: pink;
+}
+
+.username-amanda {
+    color: lightblue;
+}
+
+.username-vendela {
+    color: peachpuff;
+}
